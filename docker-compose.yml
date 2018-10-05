@@ -1,0 +1,13 @@
+version: "3.6"
+
+services:
+  app:
+    build: .
+    ports:
+      - 8001:8000
+    # volumes:
+    #   - ./uwsgi.ini:/etc/uwsgi.ini
+    #   - ./wsgi.py:/app/wsgi.py
+    # command: uwsgi --ini=/etc/uwsgi.ini
+    # command: uwsgi --http :8000 --wsgi-file uwsgi.py
+
